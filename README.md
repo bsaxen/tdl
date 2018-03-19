@@ -12,22 +12,15 @@ back_prop()
 forward_prop()
 delta()
 
-Configuration:
-
-N_INP       Number of nodes in input layer
-N_OUT       Number of nodes in output layer
-N_LAYERS    Number of internal layers
-N_NODES_<n> Number of nodes in internal layers <n>
-NON_LIN_<n> Non-linear function to be used
-
 Files:
+
 DATA_CONF   file containing configuration data 
 Example:
-  N_INP       Number of nodes in input layer  
-  N_OUT       Number of nodes in output layer  
-  N_LAYERS    Number of internal layers  
-  N_NODES_<n> Number of nodes in internal layers <n>  
-  NON_LIN_<n> Non-linear function to be used
+  N_INP       3
+  N_OUT       2
+  N_LAYERS    1
+  N_NODES_1   5
+  NON_LIN     1
 
 DATA_TRAIN  file containing training data (Header: N_INP, N_OUT)
 Example:
@@ -43,9 +36,13 @@ Example:
   
 AI_BRAIN    file containing the trained neural network (Header: Complete configuration)
 Example:
-  N_INP       Number of nodes in input layer
-  N_OUT       Number of nodes in output layer
-  N_LAYERS    Number of internal layers
-  N_NODES_<n> Number of nodes in internal layers <n>
-  NON_LIN_<n> Non-linear function to be used
-
+  N_INP       3
+  N_OUT       2
+  N_LAYERS    1
+  N_NODES_1   5
+  NON_LIN     1
+  
+  MX_1 (5x3)
+  
+  MX_2 (2x5)
+  
